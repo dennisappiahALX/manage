@@ -2,15 +2,24 @@
   "name": "tailwind-refresher",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "tailwind.config.js",
   "scripts": {
-    "build": "tailwindcss build ./input.css -o ./css/main.css",
-    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/main.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./build/css/main.css --watch",
+    "prettier": "npx prettier --write **/*.html "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennisappiahALX/frontend-mentor-landing-page.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dennisappiahALX/frontend-mentor-landing-page/issues"
+  },
+  "homepage": "https://github.com/dennisappiahALX/frontend-mentor-landing-page#readme",
   "devDependencies": {
-    "tailwindcss": "^3.2.7"
+    "prettier-plugin-tailwindcss": "^0.2.4"
   }
 }
